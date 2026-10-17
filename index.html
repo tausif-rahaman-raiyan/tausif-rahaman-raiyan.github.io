@@ -1,0 +1,946 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="index, follow">
+<title>Tausif Rahaman Raiyan — Web Developer & Student</title>
+<meta name="description" content="Portfolio of Tausif Rahaman Raiyan — student, web developer, and builder of purposeful web projects.">
+<meta name="keywords" content="Tausif Rahaman Raiyan, web developer portfolio, front end developer, Bangladesh web developer, student developer">
+<meta name="author" content="Tausif Rahaman Raiyan">
+<meta property="og:title" content="Tausif Rahaman Raiyan — Web Developer Portfolio">
+<meta property="og:description" content="Portfolio of Tausif Rahaman Raiyan — student, web developer, and builder of purposeful web projects.">
+<meta property="og:url" content="https://tausif-rahaman-raiyan.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidJAucMz8Yo-TczGW5P7nvwNTnq1UQ93lN9sJS5MeCqZBlLvl6_RQuKWzNMc694frtGBS8Y2DETY6OhqszlXROLImRNTLLn5MWEjqbn-aLZwbuYPl3c8ajTqhpk_J_Zpob4RtaFldCMtGOsC765hERYnWOoN9gCqZL8HyIQjqyZfEC3m3gSSkoTUz8O2gz/s1600/IMG_0763-modified.png">
+<link rel="icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidJAucMz8Yo-TczGW5P7nvwNTnq1UQ93lN9sJS5MeCqZBlLvl6_RQuKWzNMc694frtGBS8Y2DETY6OhqszlXROLImRNTLLn5MWEjqbn-aLZwbuYPl3c8ajTqhpk_J_Zpob4RtaFldCMtGOsC765hERYnWOoN9gCqZL8HyIQjqyZfEC3m3gSSkoTUz8O2gz/s1600/IMG_0763-modified.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+
+/* ============================================================
+   TAUSIF RAHAMAN RAIYAN — PORTFOLIO
+   Dark (default) / Light theme toggle + liquid fluid background
+   Palette: #329696 #3E9858 #856ED9 #B95F9D #C19433
+   ============================================================ */
+:root,:root[data-theme='dark']{
+  color-scheme:dark;
+  --accent:#329696; --accent-2:#3E9858; --accent-3:#856ED9;
+  --bg:#0a0a0a;
+  --text-main:#fafafa; --text-dim:#a3a3a3; --text-card:#d4d4d4;
+  --card-bg:rgba(255,255,255,.04);
+  --glass-border:rgba(255,255,255,.12);
+  --header-bg:rgba(10,10,10,.45);
+  --hover-bg:rgba(255,255,255,.07);
+  --ghost-bg:rgba(255,255,255,.06);
+  --shadow-sm:0 1px 2px rgba(0,0,0,.4);
+  --shadow-md:0 14px 36px rgba(0,0,0,.55);
+  --shadow-header:0 8px 30px rgba(0,0,0,.45);
+  --popup-bg:rgba(20,20,20,.88); --overlay:rgba(0,0,0,.6);
+  --wm-from:rgba(163,163,163,.14);
+  --name-1:#fafafa; --name-2:#a3a3a3;
+  --icon-filter:invert(.85);
+  --ring:rgba(50,150,150,.16);
+  --tag-bg:rgba(50,150,150,.16); --tag-border:rgba(50,150,150,.32);
+  --nav-height:72px; --ease:cubic-bezier(.22,1,.36,1);
+}
+:root[data-theme='light']{
+  color-scheme:light;
+  --bg:#ffffff;
+  --text-main:#0a0a0a; --text-dim:#525252; --text-card:#374151;
+  --card-bg:rgba(255,255,255,.3);
+  --glass-border:#e5e5e5;
+  --header-bg:rgba(255,255,255,.3);
+  --hover-bg:rgba(0,0,0,.04);
+  --ghost-bg:rgba(0,0,0,.04);
+  --shadow-sm:0 1px 2px rgba(0,0,0,.04);
+  --shadow-md:0 14px 36px rgba(0,0,0,.09);
+  --shadow-header:0 8px 30px rgba(0,0,0,.06);
+  --popup-bg:rgba(255,255,255,.85); --overlay:rgba(255,255,255,.55);
+  --wm-from:rgba(115,115,115,.10);
+  --name-1:#0a0a0a; --name-2:#525252;
+  --icon-filter:none;
+  --ring:rgba(50,150,150,.08);
+  --tag-bg:rgba(50,150,150,.10); --tag-border:rgba(50,150,150,.20);
+}
+html{background:var(--bg);scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;padding:var(--nav-height) 0 0;background:var(--bg);color:var(--text-main);font-family:'Inter',sans-serif;line-height:1.6;min-height:100vh;overflow-x:hidden}
+html.theme-anim,html.theme-anim *{transition:background-color .35s ease,color .35s ease,border-color .35s ease!important}
+a{text-decoration:none;color:inherit;transition:.3s}
+::selection{background:rgba(50,150,150,.3);color:var(--text-main)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+#navbar-iframe,.navbar,.header-outer{display:none!important}
+.post-author,.post-author-label,.author-profile{display:none!important}
+
+/* ---------- FLUID CANVAS (fixed, full screen, behind content) ---------- */
+#fluidCanvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;display:block;background:transparent}
+#hero,.section-padding,footer,.post-wrap{position:relative;z-index:1}
+
+/* ---------- LAYOUT ---------- */
+.container{max-width:1100px;margin:0 auto;padding:0 2rem}
+.section-padding{padding:105px 0}
+
+/* ---------- HEADER ---------- */
+header#mainHeader{position:fixed;top:12px;left:14px;width:calc(100% - 28px);z-index:1000;background:var(--header-bg);border:1px solid var(--glass-border);border-radius:20px;box-shadow:var(--shadow-header);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);transition:transform .4s ease-in-out}
+.nav-up{transform:translateY(-140%)}
+.nav-container{position:relative;display:flex;justify-content:space-between;align-items:center;height:var(--nav-height)}
+.logo-code{display:flex;align-items:center;white-space:nowrap;font-family:'Fira Code',monospace;font-size:1.32rem;font-weight:700;letter-spacing:-.055em}
+.logo-bracket{color:#329696}
+.logo-name{color:var(--text-main);margin:0 1px}
+.logo-code:hover .logo-bracket{color:#C19433}
+.nav-right{display:flex;align-items:center;gap:6px}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-links a{position:relative;padding:10px 13px;border-radius:12px;font-size:.9rem;font-weight:500;color:var(--text-dim);transition:.3s var(--ease)}
+.nav-links a:after{content:"";position:absolute;left:14px;right:14px;bottom:5px;height:2px;border-radius:2px;background:linear-gradient(90deg,#329696,#856ED9);transform:scaleX(0);transition:.3s var(--ease)}
+.nav-links a:hover,.nav-links a.active{color:var(--text-main);background:var(--hover-bg)}
+.nav-links a:hover:after,.nav-links a.active:after{transform:scaleX(1)}
+
+/* ---------- THEME TOGGLE ---------- */
+.theme-toggle{width:42px;height:42px;margin-left:8px;padding:0;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--text-main);background:var(--ghost-bg);border:1px solid var(--glass-border);transition:transform .35s var(--ease),border-color .3s ease,background-color .3s ease}
+.theme-toggle:hover{transform:rotate(18deg) scale(1.07);border-color:var(--accent)}
+.theme-toggle svg{width:20px;height:20px;display:block}
+.theme-toggle .i-moon{display:none}
+:root[data-theme='light'] .theme-toggle .i-sun{display:none}
+:root[data-theme='light'] .theme-toggle .i-moon{display:block}
+
+/* ---------- HERO ---------- */
+#hero{overflow:hidden;min-height:calc(100svh - var(--nav-height));padding:60px 20px 20px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+#hero>*:not(.hero-watermark){position:relative;z-index:2}
+.profile-img{width:230px;height:230px;border-radius:50%;object-fit:cover;padding:5px;margin-bottom:25px;background:var(--bg);border:1px solid var(--glass-border);box-shadow:0 0 0 8px var(--ring),0 20px 50px rgba(0,0,0,.18);transition:transform .4s cubic-bezier(.175,.885,.32,1.275),box-shadow .4s ease,border-color .4s ease}
+.profile-img:hover{transform:translateY(-7px) scale(1.03);border-color:#C19433;box-shadow:0 0 0 8px var(--ring),0 26px 60px rgba(0,0,0,.28)}
+.typing-text{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;font-family:'Fira Code',monospace;font-size:1.05rem;color:var(--accent);border:1px solid var(--tag-border);border-radius:999px;background:var(--tag-bg)}
+.hero-name{margin:18px 0 8px;font-size:clamp(3.2rem,7vw,6.4rem);line-height:.92;font-weight:800;letter-spacing:-.065em}
+.hero-name span{transition:transform .5s var(--ease)}
+.hero-name span:hover{transform:translateX(5px)}
+.name-part-1{color:#329696}
+.name-part-2{background:linear-gradient(90deg,var(--name-1) 25%,var(--name-2) 75%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.name-part-3{color:#856ED9}
+.bio-columns{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:900px;margin:28px auto 0;text-align:left;color:var(--text-dim);line-height:1.7;font-size:.95rem}
+.bio-columns>div{padding:20px 22px;border-radius:18px}
+.bio-columns p{margin:0}
+.hero-watermark{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:center;overflow:hidden;pointer-events:none;z-index:0}
+.hero-watermark span{display:block;margin-bottom:-2.5rem;font-weight:900;line-height:1;font-size:10rem;user-select:none;color:transparent;background:linear-gradient(to bottom,var(--wm-from),rgba(115,115,115,0));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+@media(min-width:1024px){.hero-watermark span{font-size:16rem}}
+
+/* ---------- HEADINGS ---------- */
+h2{font-size:clamp(1.8rem,3vw,2.7rem);letter-spacing:-.045em;margin:0}
+h2:after{content:"";display:block;width:42px;height:3px;margin:13px auto 0;border-radius:99px;background:linear-gradient(90deg,#329696,#3E9858,#856ED9)}
+
+/* ---------- GLASS SURFACES ---------- */
+.glass-card,.summary-box,.timeline-content,.post-outer,.bio-columns>div,.about-mini{
+  background:var(--card-bg);
+  -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+  border:1px solid var(--glass-border);
+  box-shadow:var(--shadow-sm);
+}
+.glass-card{border-radius:24px;padding:27px;transition:transform .45s var(--ease),border-color .35s ease,box-shadow .45s ease}
+.glass-card:hover{transform:translateY(-8px);border-color:var(--accent);box-shadow:var(--shadow-md)}
+
+/* ---------- PROJECTS ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,310px),1fr));gap:18px;margin-top:34px}
+#projects .glass-card{min-height:205px}
+.project-title{display:block;font-size:1.22rem;font-weight:700;color:var(--accent);margin-bottom:10px}
+.tech-tag{display:inline-flex;align-items:center;min-height:27px;margin-right:8px;padding:4px 12px;font-family:'Fira Code',monospace;font-size:.75rem;color:var(--accent);background:var(--tag-bg);border:1px solid var(--tag-border);border-radius:50px}
+
+/* ---------- ABOUT ---------- */
+.summary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-bottom:35px;width:100%}
+.summary-box{display:flex;padding:22px;border-radius:18px;transition:transform .35s var(--ease),border-color .3s ease}
+.summary-box p{margin:0;font-size:.9rem}
+.summary-box:hover{transform:translateY(-5px);border-color:var(--accent)}
+.about-mini{padding:20px;border-radius:12px}
+.btn-ghost{background:var(--ghost-bg);color:var(--text-card);border:1px solid var(--glass-border);padding:10px 24px;font-size:.9rem}
+.btn-ghost:hover{border-color:var(--accent)}
+.about-hr{border:none;border-top:1px solid var(--glass-border);margin:0 0 25px 0}
+
+/* ---------- EDUCATION TIMELINE ---------- */
+.timeline{position:relative;max-width:900px;margin:0 auto;padding-bottom:50px}
+.timeline-item{width:50%;position:relative;box-sizing:border-box;padding-top:20px;padding-bottom:20px}
+.timeline-item::after{content:'';position:absolute;top:0;bottom:0;width:100%;border:2px dashed rgba(50,150,150,.4);z-index:0}
+.timeline-item:nth-child(odd){left:0;text-align:right;padding-right:50px}
+.timeline-item:nth-child(odd)::after{right:0;border-left:none;border-radius:0 60px 60px 0}
+.timeline-item:nth-child(even){left:50%;text-align:left;padding-left:50px;margin-top:-4px}
+.timeline-item:nth-child(even)::after{left:0;border-right:none;border-radius:60px 0 0 60px}
+.timeline-item::before{content:'';position:absolute;width:16px;height:16px;top:50%;transform:translateY(-50%);z-index:2;background:var(--bg);border:3px solid var(--accent);border-radius:50%;box-shadow:0 0 0 5px var(--ring)}
+.timeline-item:nth-child(odd)::before{right:-8px}
+.timeline-item:nth-child(even)::before{left:-8px}
+.timeline-content{display:inline-block;width:85%;position:relative;z-index:2;padding:22px;border-radius:18px;transition:.3s ease}
+.timeline-content:hover{border-color:var(--accent);transform:translateY(-5px);box-shadow:var(--shadow-md)}
+.timeline-date{color:var(--accent);font:600 .76rem/1 'Fira Code',monospace;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.timeline-item h3{margin:0 0 8px;font-size:1.05rem;color:var(--text-main)}
+.timeline-item p{margin:0;font-size:.9rem}
+.timeline-icon{display:inline-block;margin-right:10px;font-size:1.4rem;animation:floatIcon 3s ease-in-out infinite}
+.timeline-item:nth-child(even) .timeline-icon{animation-delay:1.5s}
+@keyframes floatIcon{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.reveal-init{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+.reveal-init.revealed{opacity:1;transform:translateY(0)}
+
+/* ---------- POPUP ---------- */
+.popup-overlay{position:fixed;top:0;left:0;width:100%;height:100vh;z-index:9999;display:none;align-items:center;justify-content:center;background:var(--overlay);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+@keyframes popupReveal{0%{opacity:0;transform:scale(.85) translateY(30px)}100%{opacity:1;transform:scale(1) translateY(0)}}
+.popup-card{position:relative;overflow:hidden;width:90%;max-width:420px;padding:50px 40px;text-align:center;background:var(--popup-bg);border:1px solid var(--glass-border);border-radius:24px;box-shadow:0 30px 80px rgba(0,0,0,.35);animation:popupReveal .6s cubic-bezier(.175,.885,.32,1.275) forwards}
+.popup-card:before{content:"";position:absolute;width:220px;height:220px;top:-130px;right:-100px;background:rgba(50,150,150,.2);filter:blur(35px);border-radius:50%}
+.popup-card h3{margin:0 0 15px;font-size:2rem;letter-spacing:-.5px}
+.popup-card p{margin:0 0 35px;color:var(--text-dim);font-size:1.05rem}
+.popup-btn-group{display:flex;gap:15px;justify-content:center;flex-wrap:wrap}
+.btn{padding:14px 28px;border:1px solid var(--glass-border);border-radius:12px;cursor:pointer;font-weight:600;font-family:'Inter',sans-serif;font-size:1rem;transition:all .3s ease}
+@keyframes pulseGlow{0%{box-shadow:0 0 0 0 rgba(50,150,150,.5)}70%{box-shadow:0 0 0 15px rgba(50,150,150,0)}100%{box-shadow:0 0 0 0 rgba(50,150,150,0)}}
+.btn-play{background:linear-gradient(135deg,#329696,#856ED9 60%,#B95F9D);color:#fff;border-color:transparent;animation:pulseGlow 2s infinite}
+.btn-play:hover{transform:translateY(-3px)}
+.btn-no{background:var(--ghost-bg);color:var(--text-card)}
+.btn-no:hover{background:var(--hover-bg);color:var(--text-main);transform:translateY(-3px)}
+
+/* ---------- MUSIC BUTTON ---------- */
+.music-player{position:fixed;right:24px;bottom:22px;z-index:1000;width:58px;height:58px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:linear-gradient(145deg,rgba(13,45,48,.82),rgba(24,57,44,.76));border:1px solid rgba(132,220,210,.38);box-shadow:0 10px 34px rgba(0,0,0,.25),0 0 22px rgba(50,150,150,.24);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+.music-btn{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.2rem;line-height:1;color:#103337;background:linear-gradient(135deg,#78d5cc,#68b98a 52%,#e5c77c);border:1px solid rgba(255,255,255,.62);box-shadow:0 6px 22px rgba(50,150,150,.34);transition:transform .22s ease}
+.music-btn:hover{transform:scale(1.08)}
+.music-btn.is-playing{animation:musicPulse 2.6s ease-in-out infinite}
+@keyframes musicPulse{0%,100%{box-shadow:0 0 0 0 rgba(120,213,204,.25),0 6px 22px rgba(50,150,150,.34)}50%{box-shadow:0 0 0 8px rgba(120,213,204,0),0 0 30px rgba(193,148,51,.42)}}
+
+/* ---------- POST / PAGE VIEW ---------- */
+.custom-outer-title{text-align:center;margin-bottom:30px;padding:0 15px}
+.custom-outer-title .post-title{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:800;margin:0;letter-spacing:-.5px;color:var(--text-main)}
+.custom-outer-title .post-title a:hover{color:var(--accent)}
+.post-outer{border-radius:22px;padding:clamp(20px,4vw,36px);margin-bottom:25px}
+.post-body{color:var(--text-main);line-height:1.85;font-size:1rem;word-wrap:break-word;overflow-wrap:break-word;min-height:1em}
+.post-body a{color:var(--accent);text-decoration:underline}
+.post-body img{max-width:100%;height:auto;border-radius:8px;display:block;margin:15px auto;border:1px solid var(--glass-border)}
+.post-body iframe{max-width:100%}
+.post-footer{color:var(--text-dim);font-size:.85rem;margin-top:20px}
+.post-footer a{color:var(--accent)}
+.post-body [style*="color: black"],.post-body [style*="color:black"],.post-body [style*="color: #000"],.post-body [style*="color:#000"],.post-body [style*="color: rgb(0, 0, 0)"],.post-body [style*="color:rgb(0,0,0)"]{color:var(--text-main)!important}
+
+/* ---------- FOOTER ---------- */
+footer{padding:30px 0;text-align:center;border-top:1px solid var(--glass-border)}
+footer:before{content:"";display:block;width:70px;height:2px;margin:-30px auto 28px;background:linear-gradient(90deg,#329696,#3E9858,#856ED9)}
+.social-links{display:flex;justify-content:center;gap:20px;margin-bottom:20px}
+.social-links img{width:24px;opacity:.7;filter:var(--icon-filter);transition:.3s}
+.social-links img:hover{opacity:1;transform:translateY(-3px)}
+
+/* ---------- SCROLL PROGRESS ---------- */
+#portfolioProgress{position:fixed;top:0;left:0;width:0;height:2px;z-index:10001;pointer-events:none;background:linear-gradient(90deg,#329696,#856ED9,#B95F9D)}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:900px){header#mainHeader{width:calc(100% - 18px);left:9px;top:8px}.section-padding{padding:82px 0}}
+@media(max-width:768px){
+  body{padding-top:calc(var(--nav-height) + 10px)}
+  .nav-container{height:60px;justify-content:center}
+  .nav-right{position:absolute;right:10px;top:50%;transform:translateY(-50%)}
+  .theme-toggle{width:38px;height:38px;margin-left:0}
+  .logo-code{font-size:1.05rem}
+  .nav-links{display:none}
+  .container{max-width:100%;padding-left:14px;padding-right:14px}
+  .section-padding{padding:70px 0}
+  #hero{min-height:auto;padding:35px 18px 65px}
+  .profile-img{width:190px;height:190px}
+  .hero-name{width:100%;box-sizing:border-box;padding:0 10px;font-size:clamp(2.75rem,15vw,4.5rem)}
+  .hero-name span{display:block;line-height:1.1}
+  .name-part-1{text-align:left}.name-part-2{text-align:center}.name-part-3{text-align:right}
+  .bio-columns{grid-template-columns:1fr;gap:10px}
+  .hero-watermark{display:none}
+  .grid{gap:12px}
+  #projects .glass-card{min-height:auto;padding:22px}
+  .timeline-item{width:100%;padding:0 0 30px 40px!important;text-align:left!important;margin-top:0!important}
+  .timeline-item:nth-child(even){left:0}
+  .timeline-item::after{width:0;border:none;border-left:2px dashed rgba(50,150,150,.4);border-radius:0!important;left:10px!important;right:auto!important}
+  .timeline-item::before{left:2px!important;right:auto!important;top:30px;transform:none}
+  .timeline-content{width:100%}
+  .music-player{right:14px;bottom:14px;width:52px;height:52px}
+  .music-btn{width:39px;height:39px}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+</style>
+</head>
+<body>
+    <canvas id='fluidCanvas'></canvas>
+
+    <header id='mainHeader'>
+        <div class='container nav-container'>
+            <div aria-label='Raiyan home logo' class='logo-code'>
+                <a aria-label='Home' class='logo-bracket' href='/'>&lt; </a><a class='logo-name' href='/'>Raiyan</a><a aria-label='Home' class='logo-bracket' href='/'> /&gt;</a>
+            </div>
+            <div class='nav-right'>
+                <div class='nav-links'>
+                    <a href='#hero'>Home</a>
+                    <a href='#about'>About</a>
+                    <a href='#projects'>Projects</a>
+                    <a href='#education'>Education</a>
+                </div>
+                <button aria-label='Switch to light theme' class='theme-toggle' id='themeToggle' title='Switch theme' type='button'>
+                    <svg aria-hidden='true' class='i-sun' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'><circle cx='12' cy='12' r='4'/><path d='M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41'/></svg>
+                    <svg aria-hidden='true' class='i-moon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'><path d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+        <div class='popup-overlay' id='musicPopup'>
+            <div class='popup-card'>
+                <h3>Welcome!</h3>
+                <p>Would you like to experience this site with background music?</p>
+                <div class='popup-btn-group'>
+                    <button class='btn btn-play' id='btnPlayMusic'>Yes, Play</button>
+                    <button class='btn btn-no' id='btnNoMusic'>No Thanks</button>
+                </div>
+            </div>
+        </div>
+
+        <section id='hero'>
+            <div aria-hidden='true' class='hero-watermark'><span>Raiyan</span></div>
+            <img alt='Tausif Rahaman Raiyan' class='profile-img' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqELbp3_RWln7RSu0pEMavdYhiM5VIy9AxIfN8GToaIEwrCzJxJhfMZfdvKNWfow45CMf-rw0g05joA3Qkbw2v6tjNZYGLlmjI6s-kDtcvkE6YUVWw-r_KL6k6hzCrwierQsj_cc6qoBYMnq4qJZ-5HU4rSUe7r2xYt8WwAl9QCfruxEYJYnpgOSEBTbEo/s1600/IMG_20251115_151413-modified.png'/>
+            <div class='typing-text'>&gt; Student &amp; Web Developer</div>
+            
+              <h1 class='hero-name'>
+    <span class='name-part-1'>Tausif</span>
+    <span class='name-part-2'>Rahaman</span>
+    <span class='name-part-3'>Raiyan</span>
+</h1>
+
+<div class='bio-columns'>
+    <div class='bio-col-1'>
+        <p>
+            Hi, I'm Tausif Rahaman Raiyan, a web developer and a student
+            currently preparing for university admission exams. My passion
+            for web design and development comes from a fascination with
+            how code, creativity, and technology can solve real-world
+            problems. I enjoy building websites, exploring new technologies,
+            and continuously improving my programming skills.
+        </p>
+    </div>
+
+    <div class='bio-col-2'>
+        <p>
+            Beyond coding, I'm also a chess enthusiast who loves the
+            intellectual challenge of the game. Chess inspires me to think
+            strategically, analyze positions, anticipate possibilities, and
+            make thoughtful decisions. I enjoy playing chess, learning new
+            strategies, and improving my skills with every game.
+            You can find me on
+            <a href='https://www.chess.com/member/raiyan_2008'
+               target='_blank'
+               rel='noopener noreferrer'
+               style='color: var(--accent); font-weight: 600; text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 2px;'>Chess.com</a>.
+        </p>
+    </div>
+</div>
+            
+        </section>
+
+        <section class='section-padding' id='projects'>
+            <div class='container'>
+                <h2 style='text-align:center; margin-bottom: 40px;'>My Projects</h2>
+
+  <div class='grid'>
+
+    <a class='glass-card' href='https://tausifrahamanraiyan.blogspot.com/p/rudba.html' style='display: block;'>
+        <span class='tech-tag'>Confession !</span>
+        <span class='project-title'>Unspoken Words</span>
+        <p style='color: var(--text-dim); font-size: 0.9rem; margin-bottom: 10px;'>
+            Some words were left unspoken...<br/>
+            Tap softly to hear what my heart couldn't say..
+        </p>
+        <span style='color: var(--accent); font-size: 0.85rem; font-weight: 600;'>Read more &#8594;</span>
+    </a>
+
+    <a class='glass-card' href='https://tausifrahamanraiyan.blogspot.com/p/blog-page.html' style='display: block;'>
+        <span class='tech-tag'>Poetry</span>
+        <span class='project-title'>নীল শাড়ী, নীল চুড়ী</span>
+        <p style='color: var(--text-dim); font-size: 0.9rem; margin-bottom: 10px;'>নীল শাড়ী, নীল চুড়ী, চোখ ভরা কাজল দিয়ে<br/>
+চুলে বেলি ফুলের গাজরা জড়িয়ে নিয়ে<br/>
+যদি বলি রিকশায় পুরো শহর ঘুরব দুজন<br/>
+বলো ঘুরবে! ...</p>
+        <span style='color: var(--accent); font-size: 0.85rem; font-weight: 600;'>Read more &#8594;</span>
+    </a>
+
+    <a class='glass-card' href='https://tausif-rahaman-raiyan.github.io/medical-exam-app/' style='display: block;'>
+        <span class='tech-tag'>SPA Logic</span>
+        <span class='project-title'>Medical Secret Files</span>
+        <p style='color: var(--text-dim); font-size: 0.9rem;'>Interactive quiz interface and question bank with exact negative marking calculations ...</p>
+        <span style='color: var(--accent); font-size: 0.85rem; font-weight: 600;'>Read more &#8594;</span>
+    </a>
+
+    <a class='glass-card' href='https://acs-frb.blogspot.com' style='display: block;'>
+        <span class='tech-tag'>Custom CMS</span>
+        <span class='project-title'>Institutional Portal</span>
+        <p style='color: var(--text-dim); font-size: 0.9rem;'>Multi-page educational web portal managing administrative grids and student resources ...</p>
+        <span style='color: var(--accent); font-size: 0.85rem; font-weight: 600;'>Read more &#8594;</span>
+    </a>
+
+</div>
+
+<style>
+  .grid .glass-card:nth-child(6n+1) { --accent: #329696; --glass-border: rgba(50,150,150,.25); }
+  .grid .glass-card:nth-child(6n+1) .tech-tag { background: rgba(50,150,150,.12); }
+  .grid .glass-card:nth-child(6n+2) { --accent: #856ED9; --glass-border: rgba(133,110,217,.25); }
+  .grid .glass-card:nth-child(6n+2) .tech-tag { background: rgba(133,110,217,.12); }
+  .grid .glass-card:nth-child(6n+3) { --accent: #C19433; --glass-border: rgba(193,148,51,.25); }
+  .grid .glass-card:nth-child(6n+3) .tech-tag { background: rgba(193,148,51,.12); }
+  .grid .glass-card:nth-child(6n+4) { --accent: #3E9858; --glass-border: rgba(62,152,88,.25); }
+  .grid .glass-card:nth-child(6n+4) .tech-tag { background: rgba(62,152,88,.12); }
+  .grid .glass-card:nth-child(6n+5) { --accent: #B95F9D; --glass-border: rgba(185,95,157,.25); }
+  .grid .glass-card:nth-child(6n+5) .tech-tag { background: rgba(185,95,157,.12); }
+  .grid .glass-card:nth-child(6n+6) { --accent: #0171E3; --glass-border: rgba(1,113,227,.25); }
+  .grid .glass-card:nth-child(6n+6) .tech-tag { background: rgba(1,113,227,.12); }
+</style>
+
+            </div>
+        </section>
+
+        <section class='section-padding' id='about'>
+            <div class='container'>
+                <div class='glass-card' style='max-width: 1050px; margin: 0 auto; padding: 40px; border-radius: 24px;'>
+                    <h2 style='color: var(--accent); text-align: center; margin-bottom: 25px;'>About Me</h2>
+                    
+                      <p style='text-align: center; font-size: 1.05rem; line-height: 1.8; margin-bottom: 35px;'>
+    I am Tausif Rahaman Raiyan, a university admission candidate with a deep passion for web development, technology, and problem-solving. I enjoy transforming creative ideas into practical projects, exploring new technologies, and building digital experiences that are both meaningful and useful. For me, programming is more than just writing code; it is a way to think creatively, overcome challenges, and turn imagination into reality.
+
+    <br/><br/>
+
+    Beyond the world of technology, I aspire to become a doctor, driven by a desire to learn, grow, and make a positive difference in people's lives. As I navigate this journey, I strive to balance my academic ambitions with my curiosity, creativity, and personal growth. I believe that every challenge offers an opportunity to learn, every setback brings a lesson, and every small step forward brings me closer to the person I want to become.
+
+    <br/><br/>
+
+    I am still learning, still building, and still discovering what I am capable of. Whether through code, education, or life itself, my goal is to keep improving, create something meaningful, and build a future that reflects both my ambitions and my values.
+</p>
+
+<hr class='about-hr'/>
+
+<div style='display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; width: 100%;'>
+
+    <div class='about-mini'>
+        <strong style='color: var(--text-main); display: block; margin-bottom: 14px;'>
+            💻 Core Skills
+        </strong>
+
+        <div style='display: flex; flex-wrap: wrap; gap: 8px;'>
+            <span class='tech-tag'>🌐 HTML & CSS</span>
+            <span class='tech-tag'>⚡ JavaScript</span>
+            <span class='tech-tag'>🔥 Firebase</span>
+            <span class='tech-tag'>📝 Blogger XML</span>
+            <span class='tech-tag'>🧩 Frontend Development</span>
+            <span class='tech-tag'>🛠️ Problem-Solving</span>
+        </div>
+    </div>
+
+    <div class='about-mini'>
+        <strong style='color: var(--text-main); display: block; margin-bottom: 14px;'>
+            ✨ Beyond the Code
+        </strong>
+
+        <div style='display: flex; flex-wrap: wrap; gap: 8px;'>
+            <span class='tech-tag'>🩺 Medical Science</span>
+            <span class='tech-tag'>⚽ Football</span>
+            <span class='tech-tag'>🎌 Anime</span>
+            <span class='tech-tag'>🎬 K-Dramas</span>
+            <span class='tech-tag'>💡 Creative Projects</span>
+            <span class='tech-tag'>🚀 Technology</span>
+        </div>
+    </div>
+
+</div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class='section-padding' id='education'>
+            <div class='container'>
+                <h2 style='text-align:center; margin-bottom: 50px;'>Education Timeline</h2>
+                
+                  <div class='timeline-item'>
+    <div class='timeline-date'>2024 - 2025</div>
+    <h3><span class='timeline-icon'>🔬</span>Higher Secondary Certificate (HSC-2026)</h3>
+    <p style='color: var(--text-dim);'>Hajera-Taju Degree College | Science </p>
+</div>
+
+<div class='timeline-item'>
+    <div class='timeline-date'>2022 - 2023</div>
+    <h3><span class='timeline-icon'>🏫</span>Secondary School Certificate (SSC-2024)</h3>
+    <p style='color: var(--text-dim);'>Ukhia Government High School | Science </p>
+</div>
+
+<div class='timeline-item'>
+    <div class='timeline-date'>2019 - 2021</div>
+    <h3><span class='timeline-icon'>🎒</span>Junior School Certificate (JSC-2021)</h3>
+    <p style='color: var(--text-dim);'>Ukhia Government High School | Class 6-8</p>
+</div>
+
+<div class='timeline-item'>
+    <div class='timeline-date'>2016 - 2018</div>
+    <h3><span class='timeline-icon'>📖</span>Primary School Certificate (PSC-2018)</h3>
+    <p style='color: var(--text-dim);'>Ukhia Model Government Primary School | Class 3-5</p>
+</div>
+
+<div class='timeline-item'>
+    <div class='timeline-date'>2013 - 2015</div>
+    <h3><span class='timeline-icon'>🖍️</span>Early Education</h3>
+    <p style='color: var(--text-dim);'>Green Bird Kindergarten | Play to Class 2</p>
+</div>
+
+<div class='timeline-item'>
+    <div class='timeline-date'>2008 - 2012</div>
+    <h3><span class='timeline-icon'>🌟</span>Early Childhood</h3>
+    <p style='color: var(--text-dim);'>Born in October 2007, these years marked the very beginning of my journey and exploring the world around me.</p>
+</div>
+                
+            </div>
+        </section>
+
+        
+
+    <footer>
+        <div class='container'>
+            <div class='social-links'>
+                <a href='#'><img alt='Social' src='https://cdn-icons-png.flaticon.com/512/733/733553.png'/></a>
+                <a href='#'><img alt='Social' src='https://cdn-icons-png.flaticon.com/512/174/174848.png'/></a>
+                <a href='https://www.instagram.com/tausifrahamanraiyan/'><img alt='Instagram' src='https://cdn-icons-png.flaticon.com/512/174/174855.png'/></a>
+            </div>
+            <p style='color: var(--text-dim); font-size: 0.8rem;'>&#169; <script>document.write(new Date().getFullYear())</script> Tausif Rahaman Raiyan. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div aria-label='Music player' class='music-player' id='musicPlayer'>
+        <button aria-label='Play background music' class='music-btn' id='musicToggle' title='Play / pause music' type='button'>
+            <span aria-hidden='true' id='musicIcon'>&#9835;</span>
+        </button>
+        <!-- Put your MP3 link in src to enable music + the welcome popup -->
+<audio id='bgMusic' loop='loop' preload='none'>
+  <source src='https://dl.dropboxusercontent.com/scl/fi/8t48d63wxkgcwooowcfkw/Taylor-Swift-Love-Story.mp3?rlkey=90g9o52p48g2zqthmkrsdpgsq&amp;st=n1rsvver&amp;raw=1' type='audio/mpeg'/>
+</audio>
+    </div>
+
+    <div id='portfolioProgress'></div>
+
+    <script>
+    //<![CDATA[
+    (function () {
+      'use strict';
+
+      /* dark / light theme toggle (default: dark, remembered in localStorage) */
+      var root = document.documentElement;
+      var themeBtn = document.getElementById('themeToggle');
+      function syncThemeBtn() {
+        if (!themeBtn) return;
+        var light = root.getAttribute('data-theme') === 'light';
+        themeBtn.setAttribute('aria-label', light ? 'Switch to dark theme' : 'Switch to light theme');
+        themeBtn.title = light ? 'Switch to dark theme' : 'Switch to light theme';
+      }
+      syncThemeBtn();
+      if (themeBtn) themeBtn.addEventListener('click', function () {
+        var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        root.classList.add('theme-anim');
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        syncThemeBtn();
+        setTimeout(function () { root.classList.remove('theme-anim'); }, 450);
+      });
+
+      /* auto-hide navbar on scroll down */
+      var header = document.getElementById('mainHeader'), lastTop = 0;
+      var progress = document.getElementById('portfolioProgress');
+      window.addEventListener('scroll', function () {
+        var st = window.pageYOffset || document.documentElement.scrollTop;
+        if (header) header.classList.toggle('nav-up', st > lastTop && st > 100);
+        lastTop = st <= 0 ? 0 : st;
+        if (progress) {
+          var d = document.documentElement, max = d.scrollHeight - d.clientHeight;
+          progress.style.width = (max > 0 ? (d.scrollTop / max) * 100 : 0) + '%';
+        }
+      }, { passive: true });
+
+      /* Show More / Show Less in About */
+      var moreBtn = document.getElementById('showMoreBtn');
+      if (moreBtn) moreBtn.addEventListener('click', function () {
+        var boxes = document.querySelectorAll('.extra-box');
+        if (!boxes.length) return;
+        var hidden = boxes[0].style.display === 'none';
+        for (var i = 0; i < boxes.length; i++) boxes[i].style.display = hidden ? 'flex' : 'none';
+        moreBtn.innerText = hidden ? 'Show Less' : 'Show More';
+      });
+
+      /* music + welcome popup (popup only appears when an MP3 src is set) */
+      var audio = document.getElementById('bgMusic');
+      var musicBtn = document.getElementById('musicToggle');
+      var musicIcon = document.getElementById('musicIcon');
+      var popup = document.getElementById('musicPopup');
+      function hasSrc() { return audio && (audio.getAttribute('src') || audio.querySelector('source[src]')); }
+      function ui(playing) {
+        if (!musicBtn || !musicIcon) return;
+        musicIcon.innerHTML = playing ? '&#10074;&#10074;' : '&#9835;';
+        musicBtn.setAttribute('aria-label', playing ? 'Pause background music' : 'Play background music');
+        musicBtn.classList.toggle('is-playing', playing);
+      }
+      function play() {
+        if (!hasSrc()) { ui(false); if (musicBtn) musicBtn.title = 'Add your MP3 link to enable music'; return; }
+        audio.play().then(function () { ui(true); }).catch(function () { ui(false); });
+      }
+      if (musicBtn) musicBtn.addEventListener('click', function () { if (audio && !audio.paused) { audio.pause(); ui(false); } else play(); });
+      if (audio) { ['play', 'pause', 'ended', 'error'].forEach(function (ev) { audio.addEventListener(ev, function () { ui(ev === 'play'); }); }); }
+      if (popup && hasSrc()) {
+        var seen = false;
+        try { seen = sessionStorage.getItem('musicAsked') === '1'; } catch (e) {}
+        if (!seen) popup.style.display = 'flex';
+        var close = function () { popup.style.display = 'none'; try { sessionStorage.setItem('musicAsked', '1'); } catch (e) {} };
+        var yes = document.getElementById('btnPlayMusic'), no = document.getElementById('btnNoMusic');
+        if (yes) yes.addEventListener('click', function () { close(); play(); });
+        if (no) no.addEventListener('click', close);
+      }
+
+      /* scroll reveal (timeline + about boxes) */
+      var items = document.querySelectorAll('.timeline-item, .summary-box');
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (!en.isIntersecting) return;
+            var el = en.target;
+            el.classList.add('revealed');
+            io.unobserve(el);
+            setTimeout(function () { el.classList.remove('reveal-init', 'revealed'); }, 800);
+          });
+        }, { threshold: 0.15 });
+        items.forEach(function (el) { el.classList.add('reveal-init'); io.observe(el); });
+      }
+
+      /* smooth anchors + active nav item */
+      document.querySelectorAll('a[href*="#"]').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          var href = link.getAttribute('href') || '', i = href.indexOf('#');
+          if (i < 0 || href === '#' || href.length < 2) return;
+          var target = document.querySelector(href.substring(i));
+          if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); history.replaceState(null, '', href.substring(i)); }
+        });
+      });
+      var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav-links a'));
+      var targets = navLinks.map(function (a) {
+        var h = a.getAttribute('href') || '', i = h.indexOf('#');
+        return i > -1 ? document.querySelector(h.substring(i)) : null;
+      });
+      if ('IntersectionObserver' in window) {
+        var navIO = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (!en.isIntersecting) return;
+            navLinks.forEach(function (a) { a.classList.remove('active'); });
+            var k = targets.indexOf(en.target);
+            if (k > -1) navLinks[k].classList.add('active');
+          });
+        }, { rootMargin: '-35% 0px -55% 0px', threshold: 0 });
+        targets.forEach(function (t) { if (t) navIO.observe(t); });
+      }
+    })();
+    //]]>
+    </script>
+
+    <!-- LIQUID FLUID BACKGROUND (WebGL2, Stable-Fluids style) -->
+    <script>
+    //<![CDATA[
+(function () {
+  'use strict';
+  var canvas = document.getElementById('fluidCanvas');
+  if (!canvas) return;
+
+  /* ---------- SETTINGS (edit these to tune the look) ---------- */
+  var config = {
+    SIM_RESOLUTION: 128,
+    DYE_RESOLUTION: 1024,
+    DENSITY_DISSIPATION: 2.2,   // higher = colour fades faster
+    VELOCITY_DISSIPATION: 2.0,
+    PRESSURE: 0.1,
+    PRESSURE_ITERATIONS: 20,
+    CURL: 3,                    // swirl strength
+    SPLAT_RADIUS: 0.22,         // size of the blob under the cursor
+    SPLAT_FORCE: 6000,
+    COLOR_INTENSITY: 0.45,      // raise for stronger colour, lower for softer
+    COLOR_SPEED: 0.35           // how fast colours cycle
+  };
+  if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) config.DYE_RESOLUTION = 512;
+
+  /* colours taken from the reference site's icon strokes */
+  var PALETTE = [
+    [0x32, 0x96, 0x96], /* #329696 teal   */
+    [0x3E, 0x98, 0x58], /* #3E9858 green  */
+    [0x85, 0x6E, 0xD9], /* #856ED9 violet */
+    [0xB9, 0x5F, 0x9D], /* #B95F9D rose   */
+    [0xC1, 0x94, 0x33]  /* #C19433 amber  */
+  ].map(function (c) { return [c[0] / 255, c[1] / 255, c[2] / 255]; });
+
+  var gl = canvas.getContext('webgl2', { alpha: true, depth: false, stencil: false, antialias: false, preserveDrawingBuffer: false });
+  if (!gl) { console.warn('[fluid] WebGL2 not supported'); return; }
+  gl.getExtension('EXT_color_buffer_float');
+  gl.getExtension('EXT_color_buffer_half_float');
+  gl.getExtension('OES_texture_float_linear');
+
+  function supportRT(internal, format) {
+    var t = gl.createTexture();
+    gl.bindTexture(gl.TEXTURE_2D, t);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
+    gl.texImage2D(gl.TEXTURE_2D, 0, internal, 4, 4, 0, format, gl.HALF_FLOAT, null);
+    var f = gl.createFramebuffer();
+    gl.bindFramebuffer(gl.FRAMEBUFFER, f);
+    gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, t, 0);
+    var ok = gl.checkFramebufferStatus(gl.FRAMEBUFFER) === gl.FRAMEBUFFER_COMPLETE;
+    gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+    gl.deleteFramebuffer(f);
+    gl.deleteTexture(t);
+    return ok;
+  }
+  if (!supportRT(gl.RGBA16F, gl.RGBA)) { console.warn('[fluid] float render targets not supported'); return; }
+  var F_RGBA = { i: gl.RGBA16F, f: gl.RGBA };
+  var F_RG = supportRT(gl.RG16F, gl.RG) ? { i: gl.RG16F, f: gl.RG } : F_RGBA;
+  var F_R = supportRT(gl.R16F, gl.RED) ? { i: gl.R16F, f: gl.RED } : F_RG;
+
+  /* ---------- SHADERS ---------- */
+  var VS = '#version 300 es\nprecision highp float;\nlayout(location=0) in vec2 aPosition;\nout vec2 vUv;out vec2 vL;out vec2 vR;out vec2 vT;out vec2 vB;\nuniform vec2 texelSize;\nvoid main(){vUv=aPosition*0.5+0.5;vL=vUv-vec2(texelSize.x,0.0);vR=vUv+vec2(texelSize.x,0.0);vT=vUv+vec2(0.0,texelSize.y);vB=vUv-vec2(0.0,texelSize.y);gl_Position=vec4(aPosition,0.0,1.0);}';
+  var HEAD = '#version 300 es\nprecision highp float;precision highp sampler2D;\nin vec2 vUv;in vec2 vL;in vec2 vR;in vec2 vT;in vec2 vB;\nout vec4 fragColor;\n';
+
+  var FS = {
+    clear: HEAD + 'uniform sampler2D uTexture;uniform float value;void main(){fragColor=value*texture(uTexture,vUv);}',
+    display: HEAD + 'uniform sampler2D uTexture;void main(){vec3 c=max(texture(uTexture,vUv).rgb,0.0);float m=max(c.r,max(c.g,c.b));vec3 hue=c/max(m,0.0001);float a=clamp(m*1.3,0.0,0.75);fragColor=vec4(hue*a,a);}',
+    splat: HEAD + 'uniform sampler2D uTarget;uniform float aspectRatio;uniform vec3 color;uniform vec2 point;uniform float radius;void main(){vec2 p=vUv-point.xy;p.x*=aspectRatio;vec3 s=exp(-dot(p,p)/radius)*color;fragColor=vec4(texture(uTarget,vUv).xyz+s,1.0);}',
+    advection: HEAD + 'uniform sampler2D uVelocity;uniform sampler2D uSource;uniform vec2 texelSize;uniform float dt;uniform float dissipation;void main(){vec2 coord=vUv-dt*texture(uVelocity,vUv).xy*texelSize;vec4 r=texture(uSource,coord);fragColor=r/(1.0+dissipation*dt);}',
+    divergence: HEAD + 'uniform sampler2D uVelocity;void main(){float L=texture(uVelocity,vL).x;float R=texture(uVelocity,vR).x;float T=texture(uVelocity,vT).y;float B=texture(uVelocity,vB).y;vec2 C=texture(uVelocity,vUv).xy;if(vL.x<0.0)L=-C.x;if(vR.x>1.0)R=-C.x;if(vT.y>1.0)T=-C.y;if(vB.y<0.0)B=-C.y;fragColor=vec4(0.5*(R-L+T-B),0.0,0.0,1.0);}',
+    curl: HEAD + 'uniform sampler2D uVelocity;void main(){float L=texture(uVelocity,vL).y;float R=texture(uVelocity,vR).y;float T=texture(uVelocity,vT).x;float B=texture(uVelocity,vB).x;fragColor=vec4(0.5*(R-L-T+B),0.0,0.0,1.0);}',
+    vorticity: HEAD + 'uniform sampler2D uVelocity;uniform sampler2D uCurl;uniform float curl;uniform float dt;void main(){float L=texture(uCurl,vL).x;float R=texture(uCurl,vR).x;float T=texture(uCurl,vT).x;float B=texture(uCurl,vB).x;float C=texture(uCurl,vUv).x;vec2 f=0.5*vec2(abs(T)-abs(B),abs(R)-abs(L));f/=length(f)+0.0001;f*=curl*C;f.y*=-1.0;vec2 v=texture(uVelocity,vUv).xy+f*dt;v=min(max(v,-1000.0),1000.0);fragColor=vec4(v,0.0,1.0);}',
+    pressure: HEAD + 'uniform sampler2D uPressure;uniform sampler2D uDivergence;void main(){float L=texture(uPressure,vL).x;float R=texture(uPressure,vR).x;float T=texture(uPressure,vT).x;float B=texture(uPressure,vB).x;float d=texture(uDivergence,vUv).x;fragColor=vec4((L+R+B+T-d)*0.25,0.0,0.0,1.0);}',
+    gradient: HEAD + 'uniform sampler2D uPressure;uniform sampler2D uVelocity;void main(){float L=texture(uPressure,vL).x;float R=texture(uPressure,vR).x;float T=texture(uPressure,vT).x;float B=texture(uPressure,vB).x;vec2 v=texture(uVelocity,vUv).xy-vec2(R-L,T-B);fragColor=vec4(v,0.0,1.0);}'
+  };
+
+  function compile(type, src) {
+    var s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) { console.error(gl.getShaderInfoLog(s)); return null; }
+    return s;
+  }
+  var vsObj = compile(gl.VERTEX_SHADER, VS);
+  var failed = !vsObj;
+  function program(fsSrc) {
+    var fs = compile(gl.FRAGMENT_SHADER, fsSrc);
+    if (!fs || !vsObj) { failed = true; return null; }
+    var p = gl.createProgram();
+    gl.attachShader(p, vsObj);
+    gl.attachShader(p, fs);
+    gl.linkProgram(p);
+    if (!gl.getProgramParameter(p, gl.LINK_STATUS)) { console.error(gl.getProgramInfoLog(p)); failed = true; return null; }
+    var u = {}, n = gl.getProgramParameter(p, gl.ACTIVE_UNIFORMS);
+    for (var i = 0; i < n; i++) { var info = gl.getActiveUniform(p, i); u[info.name] = gl.getUniformLocation(p, info.name); }
+    return { p: p, u: u };
+  }
+  var P = {};
+  Object.keys(FS).forEach(function (k) { P[k] = program(FS[k]); });
+  if (failed) { console.warn('[fluid] shader compile/link failed - see errors above'); return; }
+  function use(pr) { gl.useProgram(pr.p); return pr.u; }
+
+  /* ---------- GEOMETRY + FBOs ---------- */
+  var vao = gl.createVertexArray();
+  gl.bindVertexArray(vao);
+  gl.bindBuffer(gl.ARRAY_BUFFER, gl.createBuffer());
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), gl.STATIC_DRAW);
+  gl.enableVertexAttribArray(0);
+  gl.vertexAttribPointer(0, 2, gl.FLOAT, false, 0, 0);
+
+  function blit(t) {
+    if (t) { gl.bindFramebuffer(gl.FRAMEBUFFER, t.fbo); gl.viewport(0, 0, t.width, t.height); }
+    else { gl.bindFramebuffer(gl.FRAMEBUFFER, null); gl.viewport(0, 0, canvas.width, canvas.height); }
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+  }
+  function createFBO(w, h, fmt, filter) {
+    gl.activeTexture(gl.TEXTURE0);
+    var tex = gl.createTexture();
+    gl.bindTexture(gl.TEXTURE_2D, tex);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, filter);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, filter);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    gl.texImage2D(gl.TEXTURE_2D, 0, fmt.i, w, h, 0, fmt.f, gl.HALF_FLOAT, null);
+    var fbo = gl.createFramebuffer();
+    gl.bindFramebuffer(gl.FRAMEBUFFER, fbo);
+    gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, tex, 0);
+    gl.viewport(0, 0, w, h);
+    gl.clearColor(0, 0, 0, 0);
+    gl.clear(gl.COLOR_BUFFER_BIT);
+    return {
+      tex: tex, fbo: fbo, width: w, height: h, tx: 1 / w, ty: 1 / h,
+      attach: function (id) { gl.activeTexture(gl.TEXTURE0 + id); gl.bindTexture(gl.TEXTURE_2D, tex); return id; }
+    };
+  }
+  function createDouble(w, h, fmt, filter) {
+    var a = createFBO(w, h, fmt, filter), b = createFBO(w, h, fmt, filter);
+    return {
+      width: w, height: h, tx: 1 / w, ty: 1 / h,
+      get read() { return a; }, get write() { return b; },
+      swap: function () { var t = a; a = b; b = t; }
+    };
+  }
+  function getRes(res) {
+    var aspect = canvas.width / canvas.height;
+    if (aspect < 1) aspect = 1 / aspect;
+    var mn = Math.round(res), mx = Math.round(res * aspect);
+    return canvas.width > canvas.height ? { w: mx, h: mn } : { w: mn, h: mx };
+  }
+  var dye, velocity, divergence, curl, pressure;
+  function initFramebuffers() {
+    var s = getRes(config.SIM_RESOLUTION), d = getRes(config.DYE_RESOLUTION);
+    dye = createDouble(d.w, d.h, F_RGBA, gl.LINEAR);
+    velocity = createDouble(s.w, s.h, F_RG, gl.LINEAR);
+    divergence = createFBO(s.w, s.h, F_R, gl.NEAREST);
+    curl = createFBO(s.w, s.h, F_R, gl.NEAREST);
+    pressure = createDouble(s.w, s.h, F_R, gl.NEAREST);
+  }
+
+  var lastW = 0, lastH = 0;
+  function sizeCanvas() {
+    var dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+    canvas.width = Math.max(1, Math.floor(window.innerWidth * dpr));
+    canvas.height = Math.max(1, Math.floor(window.innerHeight * dpr));
+    lastW = window.innerWidth; lastH = window.innerHeight;
+  }
+  sizeCanvas();
+  initFramebuffers();
+  window.addEventListener('resize', function () {
+    /* ignore small height changes (mobile address bar) so the fluid is not wiped while scrolling */
+    if (window.innerWidth !== lastW || Math.abs(window.innerHeight - lastH) > 150) { sizeCanvas(); initFramebuffers(); }
+  });
+
+  /* ---------- INPUT ---------- */
+  var activeUntil = 0;
+  var pointer = { x: 0.5, y: 0.5, dx: 0, dy: 0, moved: false, has: false };
+  function move(cx, cy) {
+    var x = cx / window.innerWidth, y = 1 - cy / window.innerHeight;
+    if (!pointer.has) { pointer.x = x; pointer.y = y; pointer.has = true; }
+    pointer.dx += x - pointer.x;
+    pointer.dy += y - pointer.y;
+    pointer.x = x; pointer.y = y;
+    pointer.moved = true;
+    activeUntil = performance.now() + 4500;
+  }
+  window.addEventListener('mousemove', function (e) { move(e.clientX, e.clientY); }, { passive: true });
+  window.addEventListener('touchmove', function (e) { if (e.touches && e.touches[0]) move(e.touches[0].clientX, e.touches[0].clientY); }, { passive: true });
+  window.addEventListener('touchstart', function (e) { if (e.touches && e.touches[0]) { pointer.has = false; move(e.touches[0].clientX, e.touches[0].clientY); } }, { passive: true });
+
+  /* ---------- COLOUR ---------- */
+  var colorT = Math.random() * PALETTE.length;
+  function currentColor() {
+    var n = PALETTE.length, i = Math.floor(colorT) % n, j = (i + 1) % n, f = colorT - Math.floor(colorT);
+    var a = PALETTE[i], b = PALETTE[j], k = config.COLOR_INTENSITY;
+    return [(a[0] + (b[0] - a[0]) * f) * k, (a[1] + (b[1] - a[1]) * f) * k, (a[2] + (b[2] - a[2]) * f) * k];
+  }
+
+  /* ---------- SIMULATION ---------- */
+  function splat(x, y, dx, dy, color) {
+    var aspect = canvas.width / canvas.height;
+    var r = config.SPLAT_RADIUS / 100;
+    if (aspect > 1) r *= aspect;
+    var u = use(P.splat);
+    gl.uniform1f(u.aspectRatio, aspect);
+    gl.uniform2f(u.point, x, y);
+    gl.uniform1f(u.radius, r);
+    gl.uniform1i(u.uTarget, velocity.read.attach(0));
+    gl.uniform3f(u.color, dx, dy, 0);
+    blit(velocity.write); velocity.swap();
+    gl.uniform1i(u.uTarget, dye.read.attach(0));
+    gl.uniform3f(u.color, color[0], color[1], color[2]);
+    blit(dye.write); dye.swap();
+  }
+
+  function step(dt) {
+    gl.disable(gl.BLEND);
+    var u = use(P.curl);
+    gl.uniform2f(u.texelSize, velocity.tx, velocity.ty);
+    gl.uniform1i(u.uVelocity, velocity.read.attach(0));
+    blit(curl);
+
+    u = use(P.vorticity);
+    gl.uniform2f(u.texelSize, velocity.tx, velocity.ty);
+    gl.uniform1i(u.uVelocity, velocity.read.attach(0));
+    gl.uniform1i(u.uCurl, curl.attach(1));
+    gl.uniform1f(u.curl, config.CURL);
+    gl.uniform1f(u.dt, dt);
+    blit(velocity.write); velocity.swap();
+
+    u = use(P.divergence);
+    gl.uniform2f(u.texelSize, velocity.tx, velocity.ty);
+    gl.uniform1i(u.uVelocity, velocity.read.attach(0));
+    blit(divergence);
+
+    u = use(P.clear);
+    gl.uniform1i(u.uTexture, pressure.read.attach(0));
+    gl.uniform1f(u.value, config.PRESSURE);
+    blit(pressure.write); pressure.swap();
+
+    u = use(P.pressure);
+    gl.uniform2f(u.texelSize, velocity.tx, velocity.ty);
+    gl.uniform1i(u.uDivergence, divergence.attach(0));
+    for (var i = 0; i < config.PRESSURE_ITERATIONS; i++) {
+      gl.uniform1i(u.uPressure, pressure.read.attach(1));
+      blit(pressure.write); pressure.swap();
+    }
+
+    u = use(P.gradient);
+    gl.uniform2f(u.texelSize, velocity.tx, velocity.ty);
+    gl.uniform1i(u.uPressure, pressure.read.attach(0));
+    gl.uniform1i(u.uVelocity, velocity.read.attach(1));
+    blit(velocity.write); velocity.swap();
+
+    u = use(P.advection);
+    gl.uniform2f(u.texelSize, velocity.tx, velocity.ty);
+    gl.uniform1i(u.uVelocity, velocity.read.attach(0));
+    gl.uniform1i(u.uSource, velocity.read.attach(0));
+    gl.uniform1f(u.dt, dt);
+    gl.uniform1f(u.dissipation, config.VELOCITY_DISSIPATION);
+    blit(velocity.write); velocity.swap();
+
+    gl.uniform1i(u.uVelocity, velocity.read.attach(0));
+    gl.uniform1i(u.uSource, dye.read.attach(1));
+    gl.uniform1f(u.dissipation, config.DENSITY_DISSIPATION);
+    blit(dye.write); dye.swap();
+  }
+
+  function render() {
+    gl.disable(gl.BLEND);
+    gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    gl.clearColor(0, 0, 0, 0);
+    gl.clear(gl.COLOR_BUFFER_BIT);
+    var u = use(P.display);
+    gl.uniform1i(u.uTexture, dye.read.attach(0));
+    blit(null);
+  }
+
+  function applyPointer() {
+    if (!pointer.moved) return;
+    pointer.moved = false;
+    var aspect = canvas.width / canvas.height, dx = pointer.dx, dy = pointer.dy;
+    pointer.dx = 0; pointer.dy = 0;
+    if (aspect < 1) dx *= aspect;
+    if (aspect > 1) dy /= aspect;
+    if (dx === 0 && dy === 0) return;
+    splat(pointer.x, pointer.y, dx * config.SPLAT_FORCE, dy * config.SPLAT_FORCE, currentColor());
+  }
+
+  var last = performance.now();
+  function frame(now) {
+    var dt = Math.min((now - last) / 1000, 0.016666);
+    last = now;
+    if (dt > 0 && now < activeUntil) {   /* stops drawing when idle to save battery */
+      colorT = (colorT + dt * config.COLOR_SPEED) % PALETTE.length;
+      applyPointer();
+      step(dt);
+      render();
+    }
+    requestAnimationFrame(frame);
+  }
+
+  /* a few starting splashes so the effect is visible straight away */
+  activeUntil = performance.now() + 4500;
+  for (var s = 0; s < 4; s++) {
+    colorT = (colorT + 1) % PALETTE.length;
+    splat(0.2 + Math.random() * 0.6, 0.3 + Math.random() * 0.5, (Math.random() - 0.5) * 3000, (Math.random() - 0.5) * 3000, currentColor());
+  }
+  requestAnimationFrame(frame);
+})();
+
+    //]]>
+    </script>
+</body>
+</html>
